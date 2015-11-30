@@ -22,11 +22,11 @@ public class MoveBlock : MonoBehaviour
     {
         strArr = stream.ReadLine().Split("|"[0]);
         Debug.Log("x " + strArr[0] +  " y " + strArr[1]);
-        if (int.Parse(strArr[0]) < 250)
+        if (int.Parse(strArr[0]) < 350)
         {
             x = 1;
         }
-        else if(int.Parse(strArr[0]) > 850)
+        else if(int.Parse(strArr[0]) > 800)
         {
             x = -1;
         }
@@ -34,11 +34,11 @@ public class MoveBlock : MonoBehaviour
         {
             x = 0;
         }
-        if (int.Parse(strArr[1]) < 250)
+        if (int.Parse(strArr[1]) < 350)
         {
             y = -1;
         }
-        else if (int.Parse(strArr[1]) > 850)
+        else if (int.Parse(strArr[1]) > 800)
         {
             y = 1;
         }
